@@ -28,6 +28,6 @@ app.use('/api/bmi', bmiRoutes);
 app.use('/api/user', userRoutes);
 
 const PORT = process.env.PORT;
-app.listen(PORT, () => {
+app.listen(PORT, process.env.HOSTNAME , () => {
   console.log(`Server is running on port ${PORT}`);
 });
