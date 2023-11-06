@@ -23,6 +23,6 @@ app.use('/api/bmi', bmiRoutes);
 app.use('/api/user', userRoutes);
 
 const port = process.env.PORT ; // Use process.env.PORT for the port
-app.listen(PORT, process.env.HOSTNAME, () => {
+app.listen(port, process.env.HOSTNAME, () => {
   console.log(`Server is running on port ${port}`);
 });
