@@ -22,7 +22,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/bmi', bmiRoutes);
 app.use('/api/user', userRoutes);
 
-const PORT = process.env.PORT || 5000; // Use process.env.PORT for the port
+const port = process.env.PORT ; // Use process.env.PORT for the port
 app.listen(PORT, process.env.HOSTNAME, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${port}`);
 });
