@@ -6,7 +6,7 @@ const app = express();
 dotenv.config(); // Load environment variables from .env file
 
 // Middleware
-app.use(cors());
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 // Connect to MongoDB
